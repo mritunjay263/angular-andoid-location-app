@@ -1,0 +1,12 @@
+<div>
+   <h2>GeoLocation Coordinates's</h2>
+   
+    <div *ngIf="getJioLocation?.latitude &&  getJioLocation?.longitude " >
+      <p>latitude: {{ getJioLocation?.latitude }}</p>
+      <p>longitude: {{ getJioLocation?.longitude }} </p>
+    </div>
+    <div *ngIf="!getJioLocation?.latitude ||  !getJioLocation?.longitude ">
+        <p>Geoplocation Loading wait please and Have some pesence..</p>
+    </div>
+
+</div>
